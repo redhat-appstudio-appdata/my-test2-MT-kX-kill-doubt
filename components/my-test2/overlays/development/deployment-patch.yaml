@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: my-test2
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/mkosiarc-tenant/my-test2/my-test2@sha256:d3b1ce2fb3b9ceb739cce39c9dda77cdb5076792e4d8ea9f263c93095521bd55
+        name: container-image
+        resources: {}
+status: {}
